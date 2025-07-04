@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="doom\style.css">
-    <link rel="stylesheet" href="doom\header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -18,12 +18,11 @@ if(!isset($_SESSION['usuario'])) {
 }
 ?>
 
-<h1>Bem-vindo, <?php echo $_SESSION['usuario']; ?>!</h1>
-    <a href="logout.php">Sair</a>
+<!--<h1>Bem-vindo, <?php //echo $_SESSION['usuario']; ?>!</h1>-->
 
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-burger" id="nav_logo">food</i>
+            <i class="fa-solid fa-burger" id="nav_logo">Doli</i>
 
             <ul id="nav_list">
                 <li>
@@ -64,5 +63,6 @@ if(!isset($_SESSION['usuario'])) {
         </div>
     </header>
 
+        <a href="logout.php">Sair</a>
 </body>
 </html>

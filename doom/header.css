@@ -7,6 +7,13 @@
 header {
     width: 100%;
     padding: 20px 8%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #navbar {
@@ -18,7 +25,7 @@ header {
 
 #nav_logo {
     font-size: 24px;
-    color: rgb(179, 126, 161);
+    color: rgb(124, 87, 112);
 }
 
 #nav_list {
@@ -33,7 +40,56 @@ header {
     font-weight: 600;
 }
 
-.nav-item.active a{
-    color: #1d1d1dad;
+.nav-item.active a {
+    color: #1d1d1d;
     border-bottom: 3px solid rgb(179, 126, 161);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+
+}
+
+#mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     <title>Dashboard</title>
 </head>
 <body>
@@ -25,13 +27,13 @@ if(!isset($_SESSION['usuario'])) {
             <i class="fa-solid fa-burger" id="nav_logo">Doli</i>
 
             <ul id="nav_list">
-                <li>
+                <li class="nav-item">
                     <a href="#home">Início</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#menu">Cardápio</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
@@ -39,20 +41,20 @@ if(!isset($_SESSION['usuario'])) {
             <button class="btn-default">
                 Peça aqui
             </button>
-            <button id="mobiles_btn">
+            <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li>
+                <li class="nav-item">
                     <a href="#home">Início</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#menu">Cardápio</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
@@ -63,6 +65,8 @@ if(!isset($_SESSION['usuario'])) {
         </div>
     </header>
 
-        <a href="logout.php">Sair</a>
+    <a href="logout.php">Sair</a>
+
+    <script src="script.js"></script>
 </body>
 </html>

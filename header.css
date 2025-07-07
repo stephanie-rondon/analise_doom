@@ -40,10 +40,10 @@ header {
     font-weight: 600;
 }
 
-.nav-item.active a {
+/*.nav-item.active a {
     color: #1d1d1d;
     border-bottom: 3px solid rgb(179, 126, 161);
-}
+}*/
 
 #mobile_btn {
     display: none;
@@ -53,7 +53,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 890px) {
 
     #nav_list,
     #navbar .btn-default {
